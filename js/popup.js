@@ -1,4 +1,5 @@
-$(document).ready(function () {
+$(document).ready(function () { 
+
     $(".hire-me").click(function () { 
         $(".popup").addClass("active"); 
         

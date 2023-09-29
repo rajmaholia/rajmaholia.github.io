@@ -2,12 +2,8 @@ $(document).ready(function(){
  const projectsData = {
    flashkart:{ 
      preview_url:"", 
-     caption:"Test Caption"
- } ,
-  todo:{ 
-     preview_url:"", 
-     caption:"Test Caption 2"
- } 
+     caption:"Comming Soon ..."
+ }
  }
   // Loop through the projectsData object to create and append cards
   for (const project in projectsData) {

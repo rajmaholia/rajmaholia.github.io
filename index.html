@@ -6,8 +6,8 @@
     <title>Raj Maholia | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="popup.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 </head>
 <body> 
     <div class="scroll-up-btn">
@@ -37,7 +37,7 @@
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Raj Maholia</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a class="hire-me">Hire me</a>
+                <a class="hire-me">Connect</a>
             </div>
         </div>
     </section>
@@ -77,12 +77,12 @@
                 <div class="column left">
                     <div class="text">My creative skills & experiences.</div>
                     <div class="skill-description">
-                      
+                       <!-- Populated via javascript -->
                     </div>
                        <a type="button" class="read-more">Read more</a>
                 </div>
                 <div class="column right skill-charts">
-
+                  <!-- populated via javascript -->
                 </div>
             </div>
         </div>
@@ -92,7 +92,8 @@
     <section class="projects" id="projects">
         <div class="max-width">
             <h2 class="title">My projects</h2>
-            <div class="carousel owl-carousel project-corousel">
+            <div class="carousel owl-carousel project-corousel"> 
+              <!-- populated via javascript -->
             </div>
         </div>
     </section>
@@ -102,7 +103,7 @@
         <div class="max-width">
             <h2 class="title">Contact me</h2>
             <div class="contact-content">
-                <div class="column left">
+                <div class="">
                     <div class="text">Get in Touch</div>
                     <p class="contact-line"></p>
                     <div class="icons">
@@ -114,10 +115,10 @@
                             </div>
                         </div>
                         <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fas fa-phone"></i>
                             <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title address"></div>
+                                <div class="head">Phone</div>
+                                <div class="sub-title phone"></div>
                             </div>
                         </div>
                         <div class="row">
@@ -127,29 +128,28 @@
                                 <div class="sub-title email"></div>
                             </div>
                         </div>
+                        <div class="row">
+                            <i class="fab fa-linkedin"></i>
+                            <div class="info">
+                                <div class="head">Linkedin</div>
+                                <div class="sub-title linkedin"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <div class="info">
+                                <div class="head">Whatsapp</div>
+                                <div class="sub-title whatsapp"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title address"></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="#" id="contact-form">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Send message</button>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>
@@ -158,34 +158,26 @@
 
     <!-- footer section start -->
     <footer>
-        <span>Created By <a href="https://www.linkedin.com/in/raj-maholia-633459262">Raj Maholia</a> | <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
-    </footer>
-        <div class="popup">
-
+        <span>Created By Raj Maholia | <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
+    </footer> 
+    
+    <!-- Popup start here -->
+    <div class="popup">
+      <!-- Wrapper for popup -->
         <div class="popup-content">
             <button class="close-button">&times;</button>  
-            <div class="cta-title">Hire me</div> 
-            <a href="mailto:maholialekhraj46@gmail.com" class="cta-email"><i class="fas fa-envelope"></i>maholialekhraj46@gmail.com</a>
-            <form class="cta-form"> 
-              <div class="cta-field">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-              </div>
-              <div class="cta-field" >
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-              </div>
-              <div class="cta-field">
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
-              </div>
-              <div class="cta-field">
-                <label for="body">Message:</label>
-                <textarea id="body" name="body" rows="12" required></textarea>
-              </div>
-                <button type="submit" class="cta-send">Send</button>
-            </form> 
-        </div>
+            <div class="cta-title">Connect</div>  
+            <div class="cta-links">
+                  <ul>
+                    <li><i class="fas fa-user git-logo"></i><a class="git-link">Raj Maholia</a></li>
+                    <li><i class="fas fa-phone git-logo"></i><a href="tel:+919509741974" class="git-link">+91 9509871974</a></li>
+                    <li><i class="fas fa-envelope git-logo"></i><a href="mailto:maholialekhraj46@gmail.com" class="git-link">maholialekhraj46@gmail.com</a></li>
+                    <li><i class="fa-brands fa-whatsapp git-logo"></i><a href="https://wa.me/919509871974" class="git-link">Whatsapp</a></li>
+                    <li><i class="fab fa-github git-logo"></i><a href="https://github.com/rajmaholia" class="git-link">https://github.com/rajmaholia</a></li>
+                    <li><i class="fab fa-linkedin git-logo"></i><a href="https://www.linkedin.com/in/raj-maholia-633459262" class="git-link">in/raj-maholia-633459262</a></li>
+                  </ul>
+            </div>
+       </div>
     </div>
     
     <!-- Third Party Scripts -->

@@ -49,33 +49,6 @@
     color: white;
 }
 
-.cta-email {
-  color:crimson;
-  align-self: center; 
-  margin-right:5px;
-} 
-
-.cta-form input , .cta-form textarea {
-  width:100%;
-  border-radius:5px ; 
-  padding: 4px ;
-  color: rgba(0,25,60,1); 
-} 
-
-.cta-form input {
-  height:45px;
-}
-.cta-form input:focus , .cta-form textarea:focus {
-  transition: all 0.3s ease; 
-  border:5px solid crimson; 
-  border-radius:7px; 
-  outline:none;
-} 
-
-.cta-form #name{
-  font-weight:bold;
-}
-
 .cta-title { 
   color:white ;
   font-style:bold;
@@ -83,33 +56,36 @@
   align-self:center;
 }
 
-.cta-field { 
-  margin-bottom : 5px;
-}
-.cta-form label {
-  color:lightgrey;
-  font-size:12px ;
+.cta-links {
+  color:crimson;
 } 
 
-.cta-send { 
-  padding:5px 15px; 
-  border-radius:5px; 
-  border-width:0;
-  background-color: crimson;
-  font-size:18px; 
-  color:white; 
-  border: 2px solid crimson; 
-  font-family: "Ubuntu" , Sans-Serif; 
-  transition: all 0.3s ease; 
-  float:right;
+.cta-links ul {
+  list-style: none;
 } 
-.cta-send:hover {
-  background: none; 
+
+.cta-links ul>li {
+  padding:10px 5px; 
+  border-bottom:1px solid white;
+} 
+
+.cta-links ul > li > i {
+  margin:8px;
+  cursor:pointer;
+}
+
+.cta-links ul > li > a {
+  text-decoration:none; 
   color:crimson;
 }
+
+
 @media screen and (max-width:768px) {
   .popup-content {
       width:100% !important; 
       max-width: 100%; 
+  } 
+  .cta-form textarea {
+    height:70%;
   }
 }

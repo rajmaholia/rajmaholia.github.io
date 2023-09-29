@@ -449,6 +449,15 @@ section .title::after{
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
+
+@media screen and (min-width:576px) {
+  .column > .icons{
+    display:grid; 
+    grid-template-columns: auto auto; 
+    column-gap: 1em;
+  }
+}
+
 .contact .contact-content .text{
     font-size: 20px;
     font-weight: 600;
@@ -660,7 +669,7 @@ footer span a:hover{
     .skills .skills-content .left .text{
         font-size: 19px;
     } 
-    .info .email , .info .address  ,.info .name {
+    .info * {
       font-size:.8em !important;
     }
     .contact .right form .fields{
